@@ -1,0 +1,21 @@
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: coral-pod
+spec:
+  containers:
+    - name: coral
+      image: akoonasyse/repo
+      command:
+        - sleep
+        - infinity
+      securityContext:
+        privileged: true
+      volumeMounts:
+        - name: usbdevice
+          mountPath: /dev/bus/usb
+  volumes:
+    - name: usbdevice
+      hostPath:
+        path: /dev/bus/usb
