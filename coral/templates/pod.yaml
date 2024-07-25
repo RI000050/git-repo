@@ -5,7 +5,7 @@ metadata:
   name: coral-pod
 spec:
   containers:
-    - name: coral
+    - name: coral-1
       image: akoonasyse/repo
       command:
         - sleep
