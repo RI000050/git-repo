@@ -1,4 +1,4 @@
 apiVersion: v2
-name: coral-1
+name: coral
 version: 0.1.3
 description: inference using Coral USB device
